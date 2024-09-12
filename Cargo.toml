@@ -1,0 +1,49 @@
+[package]
+name = "polars_empty_bracket"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars-io = { version = "0.41", features = ["avro"]}
+polars-arrow = { version = "0.41"}
+polars-ops = { version = "0.41", features = ["pivot"]}
+polars-plan = { version = "0.41", features = ["regex"]}
+polars-utils = { version = "0.41"}
+
+[dependencies.polars]
+features = [
+	"arg_where",
+	"checked_arithmetic",
+	"concat_str",
+	"cross_join",
+	"csv",
+	"cum_agg",
+	"default",
+	"dtype-categorical",
+	"dtype-datetime",
+	"dtype-struct",
+	"dtype-decimal",
+	"dtype-i8",
+	"dtype-i16",
+	"dtype-u8",
+	"dtype-u16",
+	"dynamic_group_by",
+	"ipc",
+	"is_in",
+	"json",
+	"lazy",
+	"object",
+	"parquet",
+	"random",
+	"rolling_window",
+	"rows",
+	"serde",
+	"serde-lazy",
+	"strings",
+	"string_to_integer",
+	"streaming",
+	"temporal",
+	"to_dummies",
+]
+optional = false
+version = "0.41"
