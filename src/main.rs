@@ -6,7 +6,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let file = "empty_brackets.ndjson";
 
     let schema = Arc::new(Schema::from_iter(vec![
-        Field::new("foo", DataType::String)
+        Field::new("foo".into(), DataType::String)
     ]));
 
     let df = LazyJsonLineReader::new(file)
